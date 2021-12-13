@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :links = "linkList"/>
     <Main/>
     <Footer/>
   </div>
@@ -10,7 +10,7 @@
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
-
+import db from '../db.json'
 
 export default {
   name: 'App',
@@ -18,7 +18,18 @@ export default {
     Header,
     Main,
     Footer,
-  }
+  },
+  data(){
+    return{
+      linkList: db.links,
+    }
+  },
+  methods:{
+    
+  },
+  mounted(){
+    //console.log(this.linkList);
+  },
 }
 </script>
 

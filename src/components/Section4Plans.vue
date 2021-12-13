@@ -20,7 +20,7 @@ export default {
     background-image: url('../assets/img/background1.jpg');;
     @include background-set();
     .my-subcontainer{
-        height: 900px; //da togliere
+        height: 840px; //da togliere
     }
 }
 

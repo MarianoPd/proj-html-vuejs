@@ -22,7 +22,7 @@ export default {
     @include background-set();
 
     .my-subcontainer{
-        height: 910px;
+        height: 890px;
     }
 }
 

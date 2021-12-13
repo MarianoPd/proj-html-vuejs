@@ -20,7 +20,7 @@ export default {
     background-color: $bg-alabaster;
     
     .my-subcontainer{
-        height: 1190px; //da togliere
+        height: 1120px; //da togliere
     }
 }
 

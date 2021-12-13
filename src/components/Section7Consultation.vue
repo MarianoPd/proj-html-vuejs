@@ -21,7 +21,7 @@ export default {
     
     .my-subcontainer{
         position: relative;
-        height: 480px; //da togliere
+        height: 460px; //da togliere
     }
     &::before{
         content: "";

@@ -25,7 +25,7 @@ export default {
     background-color: $bg-alabaster;
     
     .my-subcontainer{
-        height: 1350px;  //da rimuovere
+        height: 1260px;  //da rimuovere
         .top-content{
             height: 50%; //da rimuovere
         }

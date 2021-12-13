@@ -20,7 +20,7 @@ export default {
     background-color: white;
     
     .my-subcontainer{
-        height: 880px; //da togliere
+        height: 830px; //da togliere
     }
 }
 

@@ -1,0 +1,39 @@
+{
+    "links":[
+        {
+            "value": "#",
+            "name": "Home",
+            "id": 1
+        },
+        {
+            "value": "#",
+            "name": "Who We Are",
+            "id": 2
+        },
+        {
+            "value": "#",
+            "name": "What We Do",
+            "id": 3
+        },
+        {
+            "value": "#",
+            "name": "Where We Work",
+            "id": 4
+        },
+        {
+            "value": "#",
+            "name": "Careers",
+            "id": 5
+        },
+        {
+            "value": "#",
+            "name": "News",
+            "id": 6
+        },
+        {
+            "value": "#",
+            "name": "Get In Touch Now",
+            "id": 7
+        }
+    ]
+}
