@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'Footer',
+    name: 'Section5News',
 }
 </script>
 
@@ -20,7 +20,8 @@ export default {
     background-color: $bg-alabaster;
     
     .my-subcontainer{
-        height: 390px; //da togliere
+        height: 990px; //da togliere
     }
 }
+
 </style>

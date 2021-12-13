@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'Footer',
+    name: 'Section6Clients',
 }
 </script>
 
@@ -17,10 +17,11 @@ export default {
 @import '@/assets/style/vars.scss';
 
 .my-container{
-    background-color: $bg-alabaster;
+    background-color: white;
     
     .my-subcontainer{
-        height: 390px; //da togliere
+        height: 880px; //da togliere
     }
 }
+
 </style>
