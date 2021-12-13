@@ -1,19 +1,15 @@
 <template>
-  <div class="">
-    
+  <div>
+      FOOTER
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
-  props: {
-    
-  }
+    name: 'Footer',
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import './assets/style/vars.scss';
 @import './assets/style/generals.scss';
