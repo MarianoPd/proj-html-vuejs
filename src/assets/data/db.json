@@ -86,6 +86,34 @@
             "bottomText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore, atque enim culpa necessitatibus praesentium cumque fuga voluptatibus nemo non.",
             "iconClass": "fas fa-chart-bar",
             "id": 7
+        },
+        {
+            "type": "plans",
+            "mainText": "Standard",
+            "price": 19,
+            "perks": ["5", "5 GB", "Unlimited"],
+            "id": 8
+        },
+        {
+            "type": "plans",
+            "mainText": "Premium",
+            "price": 29,
+            "perks": ["10", "15 GB", "Unlimited"],
+            "id": 9
+        },
+        {
+            "type": "plans",
+            "mainText": "Professional",
+            "price": 39,
+            "perks": ["15", "30 GB", "Unlimited"],
+            "id": 10
+        },
+        {
+            "type": "plans",
+            "mainText": "Extreme",
+            "price": 59,
+            "perks": ["Unlimited", "Unlimited", "Unlimited"],
+            "id": 11
         }
     ],
 
