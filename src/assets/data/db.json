@@ -87,5 +87,32 @@
             "iconClass": "fas fa-chart-bar",
             "id": 7
         }
+    ],
+
+    "images":[
+        {
+            "id":1,
+            "name": "../assets/img/case-study-gallery-3-1.jpg"
+        },
+        {
+            "id":2,
+            "name": "../assets/img/case-study-gallery-2.jpg"
+        },
+        {
+            "id":3,
+            "name": "../assets/img/case-study-gallery-4-1.jpg"
+        },
+        {
+            "id":4,
+            "name": "../assets/img/case-study-gallery-5-1.jpg"
+        },
+        {
+            "id":5,
+            "name": "../assets/img/case-study-gallery-6-1.jpg"
+        },
+        {
+            "id":6,
+            "name": "../assets/img/case-study-gallery-3-1.jpg"
+        }
     ]
 }

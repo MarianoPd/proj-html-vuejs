@@ -6,11 +6,37 @@
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
             <div class="row g-3">
-                <div v-for="index in 6" :key="index" class="col-4">
-                    <div class="image">
-                        <img src="../assets/img/case-study-gallery-1-1.jpg" alt="">
+                <div  class="col-4">
+                    <div class="image-cont">
+                        <img src="../assets/img/case-study-gallery-3-1.jpg" alt="case-study-gallery-3-1">
                     </div>
                 </div>
+                <div  class="col-4">
+                    <div class="image-cont">
+                        <img src="../assets/img/case-study-gallery-2.jpg" alt="case-study-gallery-2">
+                    </div>
+                </div>
+                <div  class="col-4">
+                    <div class="image-cont">
+                        <img src="../assets/img/case-study-gallery-1-1.jpg" alt="case-study-gallery-1-1">
+                    </div>
+                </div>
+                <div  class="col-4">
+                    <div class="image-cont">
+                        <img src="../assets/img/case-study-gallery-4-1.jpg" alt="case-study-gallery-4-1">
+                    </div>
+                </div>
+                <div  class="col-4">
+                    <div class="image-cont">
+                        <img src="@/assets/img/case-study-gallery-5-1.jpg" alt="case-study-gallery-6-1">
+                    </div>
+                </div>
+                <div  class="col-4">
+                    <div class="image-cont">
+                        <img src="@/assets/img/case-study-gallery-6-1.jpg" alt="case-study-gallery-6-1">
+                    </div>
+                </div>
+                
             </div>
             <div class="my-btn-container">
                 <button class="my-btn yellow">view our work</button>
@@ -20,8 +46,20 @@
 </template>
 
 <script>
+import db from '../assets/data/db.json'
 export default {
     name: 'Section3Work',
+    data(){
+        return{
+            imageList: [],  //non usato perché Vue è infame
+        }
+    },
+    methods:{
+        
+    },
+    mounted(){
+        this.imageList = db.images;
+    }
 }
 </script>
 
@@ -34,7 +72,7 @@ export default {
     
     .my-subcontainer{
         
-        .image{
+        .image-cont{
             img{
                 width: 100%
             };

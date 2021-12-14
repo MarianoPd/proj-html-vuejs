@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import db from '../../db.json'
+import db from '@/assets/data/db.json'
 export default {
     name: 'Section2Services',
     data(){
