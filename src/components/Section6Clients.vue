@@ -1,19 +1,39 @@
 <template>
   <div class="container-fluid my-container">
       <div class="container my-subcontainer">
-            <Carousel_1/>
+            <div class="my-head-text">
+                <h2>
+                    What Our Clients Say
+                </h2>
+            </div> 
+            
+            <Carousel1 :listToShow="cardList" />
       </div>
   </div>
 </template>
 
 <script>
-import Carousel_1 from './Carousel_1.vue';
-//import db from '@/assets/data/db.json'
+import Carousel1 from './Carousel1.vue';
+import db from '@/assets/data/db.json'
 
 export default {
     name: 'Section6Clients',
     components:{
-        Carousel_1,
+        Carousel1,
+    },
+    data(){
+        return{
+            cardList: [],
+        }
+    },
+    methods:{
+        getList(type){
+            let array = db.cards.filter( card => card.type == type);
+            return array;
+        }
+    },
+    mounted(){
+        this.cardList = this.getList('clients');
     }
 }
 </script>

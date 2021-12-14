@@ -93,6 +93,9 @@ export default {
                 margin:0 10px ;
                 color: $primary-gray;
                 font-size: 20px;
+                &:hover{
+                    color: $primary-yellow
+                }
             }
         }
     }

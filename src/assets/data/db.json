@@ -138,6 +138,22 @@
             "date": "November 1st, 2017",
             "bottomText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore, atque enim culpa necessitatibus praesentium cumque fuga voluptatibus nemo non.",
             "id": 14
+        },
+        {
+            "type": "clients",
+            "image": "testimonials-2.jpg",
+            "name": "Luis Desalvo",
+            "position": "creo tech",
+            "review": "Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.",
+            "id": 15
+        },
+        {
+            "type": "clients",
+            "image": "testimonials-1.jpg",
+            "name": "Sheila McCourtney",
+            "position": "architect",
+            "review": "Beauty is when you can appreciate yourself. When you love yourself, that’s when you’re most beautiful.",
+            "id": 16
         }
     ],
 
