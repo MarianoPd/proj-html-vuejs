@@ -13,13 +13,17 @@
                 <div v-for="(card, index) in cardList" :key="index"
                     class="col-3 ">
                     <div class="my-card">
-                        <i :class="card.iconClass"></i>
                         <h3>{{card.mainText}}</h3>
-                        
-                        <span>{{card.perks[0]}} Projects</span>
-                        <span>{{card.perks[0]}} Storage</span>
-                        <span>{{card.perks[0]}} Users</span>
-                        
+                        <div class="price">
+                            <sup class="currency">$</sup>
+                            <span class="integer-part">{{card.price}}</span>
+                            <sup class="decimal-part">99</sup>
+                            <span class="time">monthly</span>
+                        </div>
+                        <p>{{card.perks[0]}} Projects</p>
+                        <p>{{card.perks[1]}} Storage</p>
+                        <p>{{card.perks[2]}} Users</p>
+                        <button class="my-btn" :class="index === 2 ? 'yellow' : 'white'">start today</button>
                     </div>
                 </div>
           </div>
@@ -59,13 +63,49 @@ export default {
         height: 840px; //da togliere
         .my-card{
             background-color: white;
+            .price{
+                position: relative;
+                text-align: center;
+                padding: 15px;
+                .currency{
+                    position: relative;
+                    top: -20px;
+                    font-size: 21px;
+                    color: $primary-gray;
+                }
+                .integer-part{
+                    display: inline;
+                    font-size: 55px;
+                    font-weight: 700;
+                    color: $primary-blue;
+                }
+                .decimal-part{
+                    position: relative;
+                    top: -20px;
+                    font-size: 17px;
+                    font-weight: 700;
+                    color: $primary-blue;
+                }
+                .time{
+                    display: inline;
+                    font-size: 11px;
+                    font-weight: 700;
+                    position: relative;
+                    font-style: italic;
+                    margin-left: -14px;
+                }
+            }
             h3{
                 padding: 20px;
+                color: $primary-blue;
             }
-            span{
+            p{
                 color: $primary-gray;  
                 display: block;  
-                margin-bottom: 40px;
+                margin: 20px;
+            }
+            .my-btn{
+                margin: 0 auto;
             }
             
         }
