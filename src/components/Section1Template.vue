@@ -58,7 +58,22 @@ export default {
         padding-bottom: 0;
         .top-content{
             height: 50%; //da rimuovere
-            
+            .my-card{
+                text-align: center;
+                padding: 35px;
+                i{
+                    color: $primary-yellow;
+                    font-size: 36px;
+                }
+                h3{
+                    font-size: 28px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 18px;
+                    color: $primary-gray;
+                }
+            }
             
         }
         .bottom-content{

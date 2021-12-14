@@ -35,5 +35,29 @@
             "name": "Get In Touch Now",
             "id": 7
         }
+    ],
+
+    "cards":[
+        {
+            "type": "template",
+            "mainText": "Establish Goals",
+            "bottomText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore, atque enim culpa necessitatibus praesentium cumque fuga voluptatibus nemo non.",
+            "iconClass": "fas fa-road",
+            "id": 1
+        },
+        {
+            "type": "template",
+            "mainText": "Work With a Team",
+            "bottomText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore, atque enim culpa necessitatibus praesentium cumque fuga voluptatibus nemo non.",
+            "iconClass": "fas fa-video",
+            "id": 2
+        },
+        {
+            "type": "template",
+            "mainText": "Get Results",
+            "bottomText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore, atque enim culpa necessitatibus praesentium cumque fuga voluptatibus nemo non.",
+            "iconClass": "fas fa-tint",
+            "id": 3
+        }
     ]
 }

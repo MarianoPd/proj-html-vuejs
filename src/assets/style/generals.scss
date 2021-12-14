@@ -55,3 +55,46 @@ ul {
         color: $primary-gray;
     }
 }
+
+.my-subcontainer{
+    padding: 100px 0;
+}
+
+//classe per testo in testa alla sezione
+.my-head-text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0 25%;
+    h2{
+        font-size: 38px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 21px;
+        color: $primary-gray;
+        margin-bottom: 20px;
+    }
+    &.white{
+        color: white;
+    }
+}
+
+.my-card{
+    text-align: center;
+    padding: 35px;
+    i{
+        color: $primary-yellow;
+        font-size: 36px;
+    }
+    h3{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 18px;
+        color: $primary-gray;
+    }
+}
