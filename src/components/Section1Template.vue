@@ -6,12 +6,14 @@
                     <h2>Meet The New Agency SEO Template From The Avada Team</h2>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                 </div>
-                <div class="row">
+                <div class="row g-4">
                     <div v-for="(card, index) in cardList" :key="index"
-                        class="col-4 my-card">
-                        <i :class="card.iconClass"></i>
-                        <h3>{{card.mainText}}</h3>
-                        <p>{{card.bottomText}}</p>
+                        class="col-4 ">
+                        <div class="my-card">
+                            <i :class="card.iconClass"></i>
+                            <h3>{{card.mainText}}</h3>
+                            <p>{{card.bottomText}}</p>
+                        </div>
                     </div>
                 </div>
           </div>
@@ -54,30 +56,22 @@ export default {
     background-color: $bg-alabaster;
     
     .my-subcontainer{
-        height: 1260px;  //da rimuovere
+        
         padding-bottom: 0;
         .top-content{
-            height: 50%; //da rimuovere
             .my-card{
-                text-align: center;
-                padding: 35px;
-                i{
-                    color: $primary-yellow;
-                    font-size: 36px;
-                }
-                h3{
-                    font-size: 28px;
-                    font-weight: 700;
-                }
+                background-color: white;             
                 p{
-                    font-size: 18px;
-                    color: $primary-gray;
+                    color: $primary-gray;                    
                 }
             }
             
         }
         .bottom-content{
-            height: 50%; //da rimuovere
+            
+            img{
+                max-width: 100%;
+            }
         }
     }
 }

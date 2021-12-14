@@ -85,16 +85,19 @@ ul {
 .my-card{
     text-align: center;
     padding: 35px;
+    
     i{
         color: $primary-yellow;
         font-size: 36px;
+        padding-bottom: 15px;
     }
     h3{
         font-size: 28px;
         font-weight: 700;
+        padding-bottom: 15px;
     }
     p{
         font-size: 18px;
-        color: $primary-gray;
+        padding-bottom: 20px;
     }
 }

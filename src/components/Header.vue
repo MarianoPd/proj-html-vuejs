@@ -48,7 +48,8 @@ export default {
   @include background-set();
 
   .my-subcontainer{
-    height: 800px; //da togliere
+    height: 800px; 
+    padding: 0;
     .top-header{
       height: 90px;
       ul{
@@ -77,7 +78,7 @@ export default {
       color: white;
       
       h1{
-        font-size: 64px;
+        font-size: 54px;
         font-weight: 700;
       }
       p{
