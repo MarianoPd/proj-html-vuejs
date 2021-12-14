@@ -2,7 +2,18 @@
   <div class="container-fluid my-container">
       <div class="container my-subcontainer">
           <div class="top-content">
-              top
+                <div class="my-head-text">
+                    <h2>Meet The New Agency SEO Template From The Avada Team</h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+                <div class="row">
+                    <div v-for="(card, index) in cardList" :key="index"
+                        class="col-4 my-card">
+                        <i :class="card.iconClass"></i>
+                        <h3>{{card.mainText}}</h3>
+                        <p>{{card.bottomText}}</p>
+                    </div>
+                </div>
           </div>
           <div class="bottom-content d-flex justify-content-center">
               <img src="@/assets/img/agency-seo-desk-front.jpg" alt="agency-seo-desk">
@@ -12,22 +23,43 @@
 </template>
 
 <script>
+import db from '../../db.json'
 export default {
     name: 'Section1Template',
+    data(){
+        return{
+            cardList: [],
+        }
+    },
+
+    methods:{
+        getList(type){
+            let array = db.cards.filter( card => card.type == type);
+            return array;
+        }
+    },
+    mounted(){
+        this.cardList = this.getList('template');
+        console.log(this.cardList);
+    }
 }
 </script>
 
 <style scoped lang="scss">
 @import '@/assets/style/mixins.scss';
 @import '@/assets/style/vars.scss';
+@import '@/assets/style/generals.scss';
 
 .my-container{
     background-color: $bg-alabaster;
     
     .my-subcontainer{
         height: 1260px;  //da rimuovere
+        padding-bottom: 0;
         .top-content{
             height: 50%; //da rimuovere
+            
+            
         }
         .bottom-content{
             height: 50%; //da rimuovere
