@@ -6,34 +6,9 @@
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
             <div class="row g-3">
-                <div  class="col-4">
-                    <div class="image-cont">
-                        <img src="../assets/img/case-study-gallery-3-1.jpg" alt="case-study-gallery-3-1">
-                    </div>
-                </div>
-                <div  class="col-4">
-                    <div class="image-cont">
-                        <img src="../assets/img/case-study-gallery-2.jpg" alt="case-study-gallery-2">
-                    </div>
-                </div>
-                <div  class="col-4">
-                    <div class="image-cont">
-                        <img src="../assets/img/case-study-gallery-1-1.jpg" alt="case-study-gallery-1-1">
-                    </div>
-                </div>
-                <div  class="col-4">
-                    <div class="image-cont">
-                        <img src="../assets/img/case-study-gallery-4-1.jpg" alt="case-study-gallery-4-1">
-                    </div>
-                </div>
-                <div  class="col-4">
-                    <div class="image-cont">
-                        <img src="@/assets/img/case-study-gallery-5-1.jpg" alt="case-study-gallery-6-1">
-                    </div>
-                </div>
-                <div  class="col-4">
-                    <div class="image-cont">
-                        <img src="@/assets/img/case-study-gallery-6-1.jpg" alt="case-study-gallery-6-1">
+                <div v-for="(image,index) in imageList"  :key="index"  class="col-4">
+                    <div  class="image-cont">
+                        <img :src="require('@/assets/img/'+ image.name)" :alt="image.name">
                     </div>
                 </div>
                 
@@ -51,7 +26,7 @@ export default {
     name: 'Section3Work',
     data(){
         return{
-            imageList: [],  //non usato perché Vue è infame
+            imageList: [],  
         }
     },
     methods:{
@@ -59,6 +34,7 @@ export default {
     },
     mounted(){
         this.imageList = db.images;
+        console.log(this.imageList);
     }
 }
 </script>
