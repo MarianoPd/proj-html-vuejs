@@ -79,6 +79,9 @@ ul {
     }
     &.white{
         color: white;
+        p{
+            color: white;
+        }
     }
 }
 
@@ -100,4 +103,5 @@ ul {
         font-size: 18px;
         padding-bottom: 20px;
     }
+    
 }

@@ -58,6 +58,34 @@
             "bottomText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore, atque enim culpa necessitatibus praesentium cumque fuga voluptatibus nemo non.",
             "iconClass": "fas fa-tint",
             "id": 3
+        },
+        {
+            "type": "services",
+            "mainText": "Google SEO",
+            "bottomText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore, atque enim culpa necessitatibus praesentium cumque fuga voluptatibus nemo non.",
+            "iconClass": "fab fa-google",
+            "id": 4
+        },
+        {
+            "type": "services",
+            "mainText": "Brand Strategy",
+            "bottomText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore, atque enim culpa necessitatibus praesentium cumque fuga voluptatibus nemo non.",
+            "iconClass": "fas fa-cog",
+            "id": 5
+        },
+        {
+            "type": "services",
+            "mainText": "GLocal SEo",
+            "bottomText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore, atque enim culpa necessitatibus praesentium cumque fuga voluptatibus nemo non.",
+            "iconClass": "fas fa-building",
+            "id": 6
+        },
+        {
+            "type": "services",
+            "mainText": "Seo Analysis",
+            "bottomText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore, atque enim culpa necessitatibus praesentium cumque fuga voluptatibus nemo non.",
+            "iconClass": "fas fa-chart-bar",
+            "id": 7
         }
     ]
 }

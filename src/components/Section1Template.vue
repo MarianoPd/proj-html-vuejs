@@ -42,7 +42,6 @@ export default {
     },
     mounted(){
         this.cardList = this.getList('template');
-        console.log(this.cardList);
     }
 }
 </script>
