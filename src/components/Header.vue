@@ -46,7 +46,7 @@ export default {
 .my-container{
   background-image: url('../assets/img/1-hero-image.png');
   @include background-set();
-
+  overflow-x: hidden; 
   .my-subcontainer{
     height: 800px; 
     padding: 0;

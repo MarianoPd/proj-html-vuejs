@@ -52,7 +52,7 @@ export default {
     @include background-set();
 
     .my-subcontainer{
-        height: 890px;
+        
         .my-card{
             background-color: $secondary-lucky-point;             
             color: white;  

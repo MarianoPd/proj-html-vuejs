@@ -60,7 +60,7 @@ export default {
     background-image: url('../assets/img/background1.jpg');;
     @include background-set();
     .my-subcontainer{
-        height: 840px; //da togliere
+        
         .my-card{
             background-color: white;
             .price{
