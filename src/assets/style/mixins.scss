@@ -4,3 +4,21 @@
     background-size: 100% ;
     background-repeat: no-repeat;
 }
+
+@mixin center($type: 'both'){
+    display: flex;
+    @if $type == 'justify'{
+        justify-content: center;
+    }@else if $type == 'align'{
+        align-items: center;
+    }@else if $type == 'both'{
+        align-items: center;
+        justify-content: center;
+    }@else if $type == 'between'{
+        align-items: center;
+        justify-content: space-between;
+    }@else if $type == 'evenly'{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
