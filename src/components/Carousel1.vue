@@ -63,7 +63,7 @@ export default {
 
 .clients-carousel{
   width: 50%;
-  
+  padding-bottom: 40px;
   margin: 0 auto;
   .clients{
     .client{

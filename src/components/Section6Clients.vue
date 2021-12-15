@@ -8,32 +8,41 @@
             </div> 
             
             <Carousel1 :listToShow="cardList" />
+            <Carousel2 :imgToShow="partnerList" />
       </div>
   </div>
 </template>
 
 <script>
 import Carousel1 from './Carousel1.vue';
+import Carousel2 from './Carousel2.vue';
 import db from '@/assets/data/db.json'
 
 export default {
     name: 'Section6Clients',
     components:{
         Carousel1,
+        Carousel2,
     },
     data(){
         return{
             cardList: [],
+            partnerList: [],
         }
     },
     methods:{
-        getList(type){
+        getCardList(type){
             let array = db.cards.filter( card => card.type == type);
+            return array;
+        },
+        getPartnerList(){
+            let array = db.partners;
             return array;
         }
     },
     mounted(){
-        this.cardList = this.getList('clients');
+        this.cardList = this.getCardList('clients');
+        this.partnerList = this.getPartnerList();
     }
 }
 </script>
@@ -46,7 +55,7 @@ export default {
     background-color: white;
     
     .my-subcontainer{
-        
+        padding-bottom: 0;
     }
 }
 

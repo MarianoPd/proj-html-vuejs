@@ -182,5 +182,32 @@
             "id":6,
             "name": "case-study-gallery-3-1.jpg"
         }
+    ],
+
+    "partners":[
+        {
+            "id": 1,
+            "name": "clients_partner_1-200x202.png"
+        },
+        {
+            "id": 2,
+            "name": "clients_partner_2-200x202.png"
+        },
+        {
+            "id": 3,
+            "name": "clients_partner_3-200x202.png"
+        },
+        {
+            "id": 4,
+            "name": "clients_partner_4-200x202.png"
+        },
+        {
+            "id": 5,
+            "name": "clients_partner_5-200x202.png"
+        },
+        {
+            "id": 6,
+            "name": "clients_partner_6-200x202.png"
+        }
     ]
 }
