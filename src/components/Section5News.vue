@@ -13,7 +13,9 @@
                 <div v-for="(card, index) in news" :key="index"
                     class="col-4 ">
                     <div class="my-card">
-                        <img :src="require('@/assets/img/'+ card.image)" :alt="card.image">
+                        <div class="image-wrapper">
+                            <img :src="require('@/assets/img/'+ card.image)" :alt="card.image">
+                        </div>
                         <h3>{{card.mainText}}</h3>
                         <span>{{card.date}}</span>
                         <p>{{card.bottomText}}</p>
@@ -48,9 +50,28 @@ export default {
         
         .my-card{
             padding: 0;
+            .image-wrapper{
+                width: 100%;
+                aspect-ratio: 1.58;
+                position: relative;
+                overflow: hidden;
+                img{
+                                       
+                    width: 100%;
+                    margin-bottom: 10px;
+                    &:hover{
+                        transition: 0.5s;
+                        width: 110%;
+                        transform: translate(-5%); 
+                    }
+                }
+            }
             img{
                 width: 100%;
                 margin-bottom: 10px;
+                &:hover{
+
+                }
             }
             h3{
                 color: $primary-yellow;

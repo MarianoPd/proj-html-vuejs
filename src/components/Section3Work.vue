@@ -9,6 +9,7 @@
                 <div v-for="(image,index) in images"  :key="index"  class="col-4">
                     <div  class="image-cont">
                         <img :src="require('@/assets/img/'+ image.name)" :alt="image.name">
+                        <div class="hover-effect"><i class="fas fa-link"></i></div>
                     </div>
                 </div>
                 
@@ -40,9 +41,28 @@ export default {
     .my-subcontainer{
         
         .image-cont{
+            position: relative;
             img{
                 width: 100%
             };
+            .hover-effect{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                @include center();
+                z-index: 99;
+                font-size: 35px;
+                color: white;
+                background: linear-gradient($primary-blue, $primary-blue-transparent) ;
+                opacity: 0;
+                &:hover{
+                    transition: opacity 0.5s;
+                    opacity: 1;
+                }
+            }
+            
         }
         .my-btn-container{
             width: 100%;
