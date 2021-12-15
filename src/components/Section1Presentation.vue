@@ -6,9 +6,9 @@
                     <h2>Meet The New Agency SEO Template From The Avada Team</h2>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 ">
                     <div v-for="(card, index) in presentation" :key="index"
-                        class="col-4 ">
+                        class="col-12 col-xl-4 ">
                         <div class="my-card">
                             <div class="card-top-text">
                                 <i :class="card.iconClass"></i>

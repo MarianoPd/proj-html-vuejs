@@ -6,7 +6,7 @@
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
             <div class="row g-3">
-                <div v-for="(image,index) in images"  :key="index"  class="col-4">
+                <div v-for="(image,index) in images"  :key="index"  class="col-12 col-md-6 col-lg-4">
                     <div  class="image-cont">
                         <img :src="require('@/assets/img/'+ image.name)" :alt="image.name">
                         <div class="hover-effect"><i class="fas fa-link"></i></div>

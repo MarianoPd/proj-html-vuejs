@@ -7,7 +7,7 @@
             </div>
             <div class="row g-4">
             <div v-for="(card, index) in services" :key="index"
-                class="col-3 ">
+                class="col-12 col-lg-6 col-xxl-3 ">
                 <div class="my-card white">
                     <div class="card-top-text">
                         <i :class="card.iconClass"></i>

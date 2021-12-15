@@ -11,7 +11,7 @@
           </div>
           <div class="row">
                 <div v-for="(card, index) in news" :key="index"
-                    class="col-4 ">
+                    class="col-12 col-lg-4 ">
                     <div class="my-card">
                         <div class="image-wrapper">
                             <img :src="require('@/assets/img/'+ card.image)" :alt="card.image">

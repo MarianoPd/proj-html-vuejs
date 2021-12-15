@@ -9,9 +9,9 @@
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit assumenda fugit rem optio tenetur officiis sapiente maiores perferendis!
               </p>
           </div>
-          <div class="row">
+          <div class="row g-3">
                 <div v-for="(card, index) in plans" :key="index"
-                    class="col-3 ">
+                    class="col-12 col-lg-6 col-xxl-3 ">
                     <div class="my-card">
                         <h3>{{card.mainText}}</h3>
                         <div class="price">
