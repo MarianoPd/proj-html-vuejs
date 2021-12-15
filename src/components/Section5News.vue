@@ -10,7 +10,7 @@
               </p>
           </div>
           <div class="row">
-                <div v-for="(card, index) in cardList" :key="index"
+                <div v-for="(card, index) in news" :key="index"
                     class="col-4 ">
                     <div class="my-card">
                         <img :src="require('@/assets/img/'+ card.image)" :alt="card.image">
@@ -29,22 +29,10 @@
 </template>
 
 <script>
-import db from '@/assets/data/db.json'
 export default {
     name: 'Section5News',
-    data(){
-        return{
-            cardList: [],
-        }
-    },
-    methods:{
-        getList(type){
-            let array = db.cards.filter( card => card.type == type);
-            return array;
-        }
-    },
-    mounted(){
-        this.cardList = this.getList('news');
+    props:{
+        news: Array,
     }
 }
 </script>
@@ -76,7 +64,6 @@ export default {
                 margin-top: 15px;
             }
         }
-
         .my-btn-container{
             width: 100%;
             @include center();

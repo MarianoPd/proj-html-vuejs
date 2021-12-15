@@ -7,7 +7,7 @@
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                 </div>
                 <div class="row g-4">
-                    <div v-for="(card, index) in cardList" :key="index"
+                    <div v-for="(card, index) in presentation" :key="index"
                         class="col-4 ">
                         <div class="my-card">
                             <div class="card-top-text">
@@ -27,23 +27,11 @@
 </template>
 
 <script>
-import db from '@/assets/data/db.json'
-export default {
-    name: 'Section1Template',
-    data(){
-        return{
-            cardList: [],
-        }
-    },
 
-    methods:{
-        getList(type){
-            let array = db.cards.filter( card => card.type == type);
-            return array;
-        }
-    },
-    mounted(){
-        this.cardList = this.getList('template');
+export default {
+    name: 'Section1Presentation',
+    props:{
+        presentation: Array,
     }
 }
 </script>
@@ -51,7 +39,7 @@ export default {
 <style scoped lang="scss">
 @import '@/assets/style/mixins.scss';
 @import '@/assets/style/vars.scss';
-@import '@/assets/style/generals.scss';
+
 
 .my-container{
     background-color: $bg-alabaster;

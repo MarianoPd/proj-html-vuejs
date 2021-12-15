@@ -6,7 +6,7 @@
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
             <div class="row g-3">
-                <div v-for="(image,index) in imageList"  :key="index"  class="col-4">
+                <div v-for="(image,index) in images"  :key="index"  class="col-4">
                     <div  class="image-cont">
                         <img :src="require('@/assets/img/'+ image.name)" :alt="image.name">
                     </div>
@@ -21,21 +21,12 @@
 </template>
 
 <script>
-import db from '../assets/data/db.json'
 export default {
     name: 'Section3Work',
-    data(){
-        return{
-            imageList: [],  
-        }
-    },
-    methods:{
-        
-    },
-    mounted(){
-        this.imageList = db.images;
-        console.log(this.imageList);
+    props:{
+        images: Array,
     }
+    
 }
 </script>
 

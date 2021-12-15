@@ -10,7 +10,7 @@
               </p>
           </div>
           <div class="row">
-                <div v-for="(card, index) in cardList" :key="index"
+                <div v-for="(card, index) in plans" :key="index"
                     class="col-3 ">
                     <div class="my-card">
                         <h3>{{card.mainText}}</h3>
@@ -32,22 +32,11 @@
 </template>
 
 <script>
-import db from '@/assets/data/db.json'
+
 export default {
     name: 'Section4Plans',
-    data(){
-        return{
-            cardList: [],
-        }
-    },
-    methods:{
-        getList(type){
-            let array = db.cards.filter( card => card.type == type);
-            return array;
-        }
-    },
-    mounted(){
-        this.cardList = this.getList('plans');
+    props:{
+        plans: Array,
     }
 }
 </script>

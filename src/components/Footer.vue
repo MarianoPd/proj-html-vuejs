@@ -25,6 +25,7 @@
             <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
+      <button class="up-btn"><a href="#"><i class="fas fa-chevron-up"></i></a></button>
   </div>
 </template>
 
@@ -77,7 +78,7 @@ export default {
             }
         }
         .credits{
-            color: $secondry-gray-light;
+            color: $secondary-gray-light;
             text-align: center;
             a{
                 color: $primary-gray;
@@ -99,5 +100,23 @@ export default {
             }
         }
     }
+    .up-btn{
+    position: fixed;
+    bottom: 0;
+    right: 70px;
+    background-color: $primary-gray;
+    width: 45px;
+    height: 35px;
+    border-radius: 7px 7px 0 0;
+    border: 0;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    &:hover{
+      transition: 0.2s;
+      background-color: $primary-yellow;
+    }
+  }
 }
 </style>

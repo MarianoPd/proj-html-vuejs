@@ -7,8 +7,8 @@
                 </h2>
             </div> 
             
-            <Carousel1 :listToShow="cardList" />
-            <Carousel2 :imgToShow="partnerList" />
+            <Carousel1 :listToShow= "clients" />
+            <Carousel2 :imgToShow= "partners" />
       </div>
   </div>
 </template>
@@ -16,7 +16,6 @@
 <script>
 import Carousel1 from './Carousel1.vue';
 import Carousel2 from './Carousel2.vue';
-import db from '@/assets/data/db.json'
 
 export default {
     name: 'Section6Clients',
@@ -24,25 +23,9 @@ export default {
         Carousel1,
         Carousel2,
     },
-    data(){
-        return{
-            cardList: [],
-            partnerList: [],
-        }
-    },
-    methods:{
-        getCardList(type){
-            let array = db.cards.filter( card => card.type == type);
-            return array;
-        },
-        getPartnerList(){
-            let array = db.partners;
-            return array;
-        }
-    },
-    mounted(){
-        this.cardList = this.getCardList('clients');
-        this.partnerList = this.getPartnerList();
+    props:{
+        clients: Array,
+        partners: Array,
     }
 }
 </script>

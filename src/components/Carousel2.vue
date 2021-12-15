@@ -64,7 +64,7 @@ export default {
     padding-bottom: 0  ;
     
     .slider-wrapper{
-        border-top: 1px solid lighten($secondry-gray-light, 30%);
+        border-top: 1px solid lighten($secondary-gray-light, 30%);
         padding: 50px 0 40px 0;        
         position: relative;
         overflow: hidden;

@@ -6,7 +6,7 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit assumenda fugit rem optio tenetur officiis sapiente maiores perferendis!</p>
             </div>
             <div class="row g-4">
-            <div v-for="(card, index) in cardList" :key="index"
+            <div v-for="(card, index) in services" :key="index"
                 class="col-3 ">
                 <div class="my-card white">
                     <div class="card-top-text">
@@ -24,23 +24,12 @@
 </template>
 
 <script>
-import db from '@/assets/data/db.json'
+
 export default {
     name: 'Section2Services',
-    data(){
-        return{
-            cardList: [],
-        }
+    props:{
+        services: Array,
     },
-    methods:{
-        getList(type){
-            let array = db.cards.filter( card => card.type == type);
-            return array;
-        }
-    },
-    mounted(){
-        this.cardList = this.getList('services');
-    }
 }
 </script>
 
