@@ -5,9 +5,10 @@
         <img src="../assets/img/logo_seo_w_1x.png" alt="logo_seo_w_1x">
         <ul>
           <li v-for="(link,index) in links" :key="index">
-            <button v-if="link.id === links.length" class="my-btn mini yellow">{{link.name}}</button>
-            <a v-else-if="link.id === 1" class="text-yellow"  :href="link.link">{{link.name}}</a>
+            <button v-if="index  === links.length - 1" class="my-btn mini yellow">{{link.name}}</button>
+            <a v-else-if="index === 0" class="text-yellow"  :href="link.link">{{link.name}}</a>
             <a v-else :href="link.link">{{link.name}}</a>
+            <span v-if="index === 4" class="apply-btn">APPLY</span>
           </li>
         </ul>
       </div>
@@ -59,6 +60,7 @@ export default {
         justify-content: center;
         
         li{
+          cursor: pointer;
           padding-right: 35px;
           a{
             text-decoration: none;
@@ -68,6 +70,15 @@ export default {
           }
           .text-yellow{
             color: $primary-yellow;
+          }
+          .apply-btn{
+            color: $primary-yellow;
+            font-size: 12px;
+            margin-left: 10px;
+            padding: 1px 5px;
+            border: 1px solid $primary-yellow;
+            border-radius: 4px;
+            &:hover{filter: brightness(1.1);}
           }
         }
       }
