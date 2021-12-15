@@ -10,8 +10,10 @@
                     <div v-for="(card, index) in cardList" :key="index"
                         class="col-4 ">
                         <div class="my-card">
-                            <i :class="card.iconClass"></i>
-                            <h3>{{card.mainText}}</h3>
+                            <div class="card-top-text">
+                                <i :class="card.iconClass"></i>
+                                <h3>{{card.mainText}}</h3>
+                            </div>
                             <p>{{card.bottomText}}</p>
                         </div>
                     </div>
@@ -59,7 +61,8 @@ export default {
         padding-bottom: 0;
         .top-content{
             .my-card{
-                background-color: white;             
+                background-color: white;  
+                      
                 p{
                     color: $primary-gray;                    
                 }

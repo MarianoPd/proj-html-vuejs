@@ -9,8 +9,10 @@
             <div v-for="(card, index) in cardList" :key="index"
                 class="col-3 ">
                 <div class="my-card white">
-                    <i :class="card.iconClass"></i>
-                    <h3>{{card.mainText}}</h3>
+                    <div class="card-top-text">
+                        <i :class="card.iconClass"></i>
+                        <h3>{{card.mainText}}</h3>
+                    </div>
                     <p>{{card.bottomText}}</p>
                     <a href="#">Read More ></a>
                 </div>
@@ -60,7 +62,8 @@ export default {
                 color: $primary-yellow;
                 text-decoration: none;
                 font-size: 18px;
-            }
+            }  
+            
         }
     }
 }

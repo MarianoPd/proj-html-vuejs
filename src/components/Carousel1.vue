@@ -68,14 +68,17 @@ export default {
   .clients{
     .client{
       transition: opacity ease-in-out .5s;
-      width: 100%;
+      width: 50%;
       opacity: 0;
       z-index: -1;
       position: absolute;
+      top: 0;
+      left: 0;
       text-align: center;
       &.active{
         opacity: 1;
         z-index: 0;
+        width: 100%;
         position: relative;
       }
       .round-image{

@@ -48,7 +48,7 @@ export default {
   @include background-set();
   overflow-x: hidden; 
   .my-subcontainer{
-    height: 800px; 
+    height: 100vh; 
     padding: 0;
     .top-header{
       height: 90px;
